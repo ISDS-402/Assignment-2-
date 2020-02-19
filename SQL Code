@@ -102,3 +102,18 @@ CREATE TABLE EQUIPMENT_INVENTORY(
                                  REFERENCES SPORT(SportId)
 );
 
+CREATE TABLE EQUIPMENT_LOG(
+  EquipmentId Int NOT NULL UNIQUE, 
+  Cwid		Int		NOT NULL UNIQUE,
+  DateBorrowed Date NOT NULL,
+  DateReturned Date NOT NULL, 
+  Purpose Char(5) NOT NULL,
+  NoOfItemsBorrowed Int NOT NULL, 
+  CONSTRAINT EQUIPMENT_LOG_PF PRIMARY KEY(EquipmentId, Cwid, DateBorrowed, Purpose),
+  CONSTRAINT EQUIPMENT_LOG_STUDENTS_FK FOREIGN KEY(Cwid)
+                                       REFERENCES STUDENTS(Cwid),
+  CONSTRAINT EQUIPMENT_LOG_EQUIPMENT_INV_FK FOREIGN KEY(EquipmentId)
+                                            REFERENCES EQUIPMENT_INVENTORY(EquipmentId)                               
+);
+
+
