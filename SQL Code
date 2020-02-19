@@ -45,3 +45,16 @@ CREATE TABLE REFEREE (
     RefEmail  VarChar(100) NOT NULL, 
     CONSTRAINT RefId_PK PRIMARY KEY(RefId)
 );
+
+CREATE TABLE TEAMS(
+  TeamId Int NOT NULL UNIQUE, 
+  TeamName Char(25) NOT NULL UNIQUE, 
+  SportId   Int   NOT NULL UNIQUE,
+  CoachID	Int	  NOT NULL UNIQUE,
+  CONSTRAINT TEAMS_PK PRIMARY KEY(Teamid),
+  CONSTRAINT TEAMS_SPORT_FK FOREIGN KEY(SportId)
+                            REFERENCES SPORT(SportId),
+  CONSTRAINT TEAMS_COACH_FK FOREIGN KEY(CoachId)
+                            REFERENCES COACH(CoachId) 
+  
+);
