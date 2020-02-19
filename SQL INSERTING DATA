@@ -1,1 +1,15 @@
+USE INTRAMURAL
+GO
+
+	/* Student   */
+INSERT INTO STUDENTS VALUES(12345678, 'Daniel', 'Man', 'danielman@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(21354931, 'Paul', 'Green', 'paulgreen@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(45612353, 'Lucy', 'Woman', 'lucywoman@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(98745611, 'Steph', 'Curry', 'stephcurry@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(23123457, 'Greg', 'Chan', 'gregagcj@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(35697812, 'Stephanie', 'Mgun', 'stephmgun12@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(43146518, 'Otelio', 'Men', 'oteliomen89@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(11234561, 'Ian', 'Stan', 'ianstan@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(98754123, 'Manny', 'Power', 'mannypower@csu.fullerton.edu');
+INSERT INTO STUDENTS VALUES(54562135, 'Giselle', 'Li', 'giselleli@csu.fullerton.edu');
 
