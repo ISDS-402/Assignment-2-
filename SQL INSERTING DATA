@@ -73,4 +73,16 @@ INSERT INTO REFEREE VALUES(81, 'Bill', 'Vinovick', 'BillVinovick@csu');
 INSERT INTO REFEREE VALUES(91, 'Edward', 'Hochuli', 'EdwardHochuli@csu');
 INSERT INTO REFEREE VALUES(01, 'Carson', 'Wentz', 'CarsonWentz@csu');
 
+	/* Teams */
+INSERT INTO TEAMS VALUES(01, 'Los Angeles Clippers', 458, 1);
+INSERT INTO TEAMS VALUES(02, 'Los Angeles Lakers', 458, 2);
+INSERT INTO TEAMS VALUES(03, 'Chicago Cubs', 787, 3);
+INSERT INTO TEAMS VALUES(04, 'New York Wankees', 787, 4);
+INSERT INTO TEAMS VALUES(05, 'Manchester United', 651, 5);
+INSERT INTO TEAMS VALUES(06, 'FC Barcelona', 651, 6);
+INSERT INTO TEAMS VALUES(07, 'AC Milan', 651, 7);
+INSERT INTO TEAMS VALUES(08, 'Brooklyn Nets', 458, 8);
+INSERT INTO TEAMS VALUES(09, 'Team Bowling', 664, 9);
+INSERT INTO TEAMS VALUES(10, 'Team Badminton', 214, 10);
+
 
