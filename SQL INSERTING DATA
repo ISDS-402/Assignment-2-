@@ -13,3 +13,14 @@ INSERT INTO STUDENTS VALUES(11234561, 'Ian', 'Stan', 'ianstan@csu.fullerton.edu'
 INSERT INTO STUDENTS VALUES(98754123, 'Manny', 'Power', 'mannypower@csu.fullerton.edu');
 INSERT INTO STUDENTS VALUES(54562135, 'Giselle', 'Li', 'giselleli@csu.fullerton.edu');
 
+	/* Coach */
+INSERT INTO COACH VALUES(1, 'Greg', 'Popvich', 'gpopvich@fullerton.edu');
+INSERT INTO COACH VALUES(2, 'Luke', 'Walton', 'lwalton@fullerton.edu');
+INSERT INTO COACH VALUES(3, 'Steve', 'Kerr', 'skerr@fullerton.edu');
+INSERT INTO COACH VALUES(4, 'Mike', 'Pop', 'mpop@fullerton.edu');
+INSERT INTO COACH VALUES(5, 'Manny', 'Pacquiao', 'mpacquiao@fullerton.edu');
+INSERT INTO COACH VALUES(6, 'Tyson', 'Fury', 'tfury@fullerton.edu');
+INSERT INTO COACH VALUES(7, 'Deontay', 'Wilder', 'dwilder@fullerton.edu');
+INSERT INTO COACH VALUES(8, 'Ryan', 'Garcias', 'rgarcias@fullerton.edu');
+INSERT INTO COACH VALUES(9, 'Fred', 'Ion', 'fion@fullerton.edu');
+INSERT INTO COACH VALUES(10, 'Bob', 'Ross', 'bross@fullerton.edu');
