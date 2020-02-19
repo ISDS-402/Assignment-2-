@@ -31,3 +31,17 @@ CREATE TABLE LOCATION (
 	LocationType	Char(30)	NOT NULL,
 	CONSTRAINT	LOCATION_PK	PRIMARY KEY(LocationId)
 );
+
+CREATE TABLE SPORT (
+    SportId   Int   NOT NULL UNIQUE,
+    SportName Char(30) NOT NULL,
+    CONSTRAINT SportId_PK PRIMARY KEY(SportId)
+);
+
+CREATE TABLE REFEREE (
+    RefId  Int  NOT NULL UNIQUE, 
+    FName  Char(25) NOT NULL,
+    LName  Char(30) NOT NULL,
+    RefEmail  VarChar(100) NOT NULL, 
+    CONSTRAINT RefId_PK PRIMARY KEY(RefId)
+);
