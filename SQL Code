@@ -33,9 +33,9 @@ CREATE TABLE LOCATION (
 );
 
 CREATE TABLE SPORT (
-    SportId   Int   NOT NULL UNIQUE,
-    SportName Char(30) NOT NULL,
-    CONSTRAINT SportId_PK PRIMARY KEY(SportId)
+    	SportId   	Int   		NOT NULL UNIQUE,
+    	SportName 	Char(30) 	NOT NULL,
+    	CONSTRAINT 	SportId_PK 	PRIMARY KEY(SportId)
 );
 
 CREATE TABLE REFEREE (
