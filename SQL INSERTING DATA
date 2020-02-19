@@ -37,4 +37,14 @@ INSERT INTO SPORT VALUES(664, 'Bowling');
 INSERT INTO SPORT VALUES(214, 'Badminton');
 INSERT INTO SPORT VALUES(373, 'Tennis');
 
-
+	/* Coordinator */
+INSERT INTO COORDINATOR VALUES(1234, 'Mary', 'Abernathy', 'mabernathy@fullerton.edu', 123);
+INSERT INTO COORDINATOR VALUES(5678, 'Tom', 'Caruthers', 'tcaruthers@fullerton.edu', 458);
+INSERT INTO COORDINATOR VALUES(9874, 'Heather', 'Jones','hjones@fullerton.edu', 787);
+INSERT INTO COORDINATOR VALUES(1324, 'Ken', 'Numoto','knumoto@fullerton.edu', 651);
+INSERT INTO COORDINATOR VALUES(1264, 'Linda', 'Granger','lgranger@fullerton.edu', 986);
+INSERT INTO COORDINATOR VALUES(7898, 'Ken', 'Evans','kevans@fullerton.edu', 824);
+INSERT INTO COORDINATOR VALUES(1658, 'Mary', 'Jacobs','mjacobs@fullerton.edu', 987);
+INSERT INTO COORDINATOR VALUES(9875, 'Rosalie', 'Jackson','rjackson@fullerton.edu', 664);
+INSERT INTO COORDINATOR VALUES(1214, 'Richard', 'Bandalone','rbandalone@fullerton.edu', 214);
+INSERT INTO COORDINATOR VALUES(1895, 'George', 'Smith','gsmith@fullerton.edu',373);
