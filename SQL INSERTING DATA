@@ -48,3 +48,16 @@ INSERT INTO COORDINATOR VALUES(1658, 'Mary', 'Jacobs','mjacobs@fullerton.edu', 9
 INSERT INTO COORDINATOR VALUES(9875, 'Rosalie', 'Jackson','rjackson@fullerton.edu', 664);
 INSERT INTO COORDINATOR VALUES(1214, 'Richard', 'Bandalone','rbandalone@fullerton.edu', 214);
 INSERT INTO COORDINATOR VALUES(1895, 'George', 'Smith','gsmith@fullerton.edu',373);
+
+	/* Location */
+INSERT INTO LOCATION VALUES(621, 'Basketball Court1', 'Court');
+INSERT INTO LOCATION VALUES(801, 'Basketball Court2', 'Court');
+INSERT INTO LOCATION VALUES(832, 'Basketball Court3', 'Court');
+INSERT INTO LOCATION VALUES(834, 'Football Field1', 'Field');
+INSERT INTO LOCATION VALUES(836, 'Football Field2', 'Field');
+INSERT INTO LOCATION VALUES(838, 'Football Field3', 'Field');
+INSERT INTO LOCATION VALUES(631, 'Soccer Field1', 'Field');
+INSERT INTO LOCATION VALUES(831, 'Soccer Field2', 'Field');
+INSERT INTO LOCATION VALUES(833, 'Pool1', 'Pool');
+INSERT INTO LOCATION VALUES(837, 'Pool2', 'Pool');
+
