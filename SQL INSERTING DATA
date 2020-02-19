@@ -24,3 +24,17 @@ INSERT INTO COACH VALUES(7, 'Deontay', 'Wilder', 'dwilder@fullerton.edu');
 INSERT INTO COACH VALUES(8, 'Ryan', 'Garcias', 'rgarcias@fullerton.edu');
 INSERT INTO COACH VALUES(9, 'Fred', 'Ion', 'fion@fullerton.edu');
 INSERT INTO COACH VALUES(10, 'Bob', 'Ross', 'bross@fullerton.edu');
+
+	/* SPORT */
+INSERT INTO SPORT VALUES(123, 'Football');
+INSERT INTO SPORT VALUES(458, 'Basketball');
+INSERT INTO SPORT VALUES(787, 'Baseball');
+INSERT INTO SPORT VALUES(651, 'Soccer');
+INSERT INTO SPORT VALUES(986, 'Hockey');
+INSERT INTO SPORT VALUES(824, 'Swimming');
+INSERT INTO SPORT VALUES(987, 'Boxing');
+INSERT INTO SPORT VALUES(664, 'Bowling');
+INSERT INTO SPORT VALUES(214, 'Badminton');
+INSERT INTO SPORT VALUES(373, 'Tennis');
+
+
