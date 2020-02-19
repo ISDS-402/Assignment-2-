@@ -61,3 +61,16 @@ INSERT INTO LOCATION VALUES(831, 'Soccer Field2', 'Field');
 INSERT INTO LOCATION VALUES(833, 'Pool1', 'Pool');
 INSERT INTO LOCATION VALUES(837, 'Pool2', 'Pool');
 
+	/*REFEREE*/
+INSERT INTO REFEREE VALUES(11,'Sam', 'Stewart','SamStewart@csu');
+INSERT INTO REFEREE VALUES(21,'Tom', 'Jackson', 'TomJackson@csu');
+INSERT INTO REFEREE VALUES(31,'Mary', 'Smith', 'MarySmith@csu');
+INSERT INTO REFEREE VALUES(41,'Jason', 'Sleeman','JasonSleeman@csu');
+INSERT INTO REFEREE VALUES(51,'Mike', 'Nguyen', 'MikeNguyen@csu');
+INSERT INTO REFEREE VALUES(61, 'Rick', 'Brown', 'RickBrown@csu');
+INSERT INTO REFEREE VALUES(71, 'James', 'Nestor', 'JamesNestor@csu');
+INSERT INTO REFEREE VALUES(81, 'Bill', 'Vinovick', 'BillVinovick@csu');
+INSERT INTO REFEREE VALUES(91, 'Edward', 'Hochuli', 'EdwardHochuli@csu');
+INSERT INTO REFEREE VALUES(01, 'Carson', 'Wentz', 'CarsonWentz@csu');
+
+
