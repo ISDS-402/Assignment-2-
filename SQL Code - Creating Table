@@ -35,11 +35,11 @@ CREATE TABLE COORDINATOR (
 );
 
 CREATE TABLE REFEREE (
-    RefId  Int  NOT NULL UNIQUE, 
-    FName  Char(25) NOT NULL,
-    LName  Char(30) NOT NULL,
-    RefEmail  VarChar(100) NOT NULL, 
-    CONSTRAINT RefId_PK PRIMARY KEY(RefId)
+    	RefId  		Int  		NOT NULL UNIQUE, 
+    	FName  		Char(25) 	NOT NULL,
+    	LName  		Char(30) 	NOT NULL,
+    	RefEmail  	VarChar(100) 	NOT NULL, 
+    	CONSTRAINT 	RefId_PK 	PRIMARY KEY(RefId)
 );
 
 CREATE TABLE LOCATION (
@@ -50,26 +50,26 @@ CREATE TABLE LOCATION (
 );
 
 CREATE TABLE TEAMS(
-  TeamId Int NOT NULL UNIQUE, 
-  TeamName Char(25) NOT NULL UNIQUE, 
-  SportId   Int   NOT NULL,
-  CoachID	Int	  NOT NULL UNIQUE,
-  CONSTRAINT TEAMS_PK PRIMARY KEY(Teamid),
-  CONSTRAINT TEAMS_SPORT_FK FOREIGN KEY(SportId)
-                            REFERENCES SPORT(SportId),
-  CONSTRAINT TEAMS_COACH_FK FOREIGN KEY(CoachId)
-                            REFERENCES COACH(CoachId) 
+  	TeamId 		Int 		NOT NULL UNIQUE, 
+  	TeamName 	Char(25) 	NOT NULL UNIQUE, 
+  	SportId   	Int   		NOT NULL,
+  	CoachID		Int	  	NOT NULL UNIQUE,
+  	CONSTRAINT 	TEAMS_PK 	PRIMARY KEY(Teamid),
+  	CONSTRAINT 	TEAMS_SPORT_FK 	FOREIGN KEY(SportId)
+                            		REFERENCES SPORT(SportId),
+  	CONSTRAINT 	TEAMS_COACH_FK 	FOREIGN KEY(CoachId)
+                            		REFERENCES COACH(CoachId) 
   
 );
 
 CREATE TABLE STUDENT_ASSOC (
-	Cwid		Int			NOT NULL UNIQUE,
-	TeamsId		Int			NOT NULL UNIQUE,
-	CONSTRAINT	STUDENT_ASSOC_PK	PRIMARY KEY(Cwid, TeamsId),
-	CONSTRAINT	STUDENTS_FK		FOREIGN KEY(Cwid)
-						REFERENCES STUDENTS(Cwid),
-	CONSTRAINT	TEAMS_FK		FOREIGN KEY(TeamsId)
-						REFERENCES TEAMS(TeamId)
+	Cwid		Int		 NOT NULL UNIQUE,
+	TeamsId		Int		 NOT NULL UNIQUE,
+	CONSTRAINT	STUDENT_ASSOC_PK PRIMARY KEY(Cwid, TeamsId),
+	CONSTRAINT	STUDENTS_FK	 FOREIGN KEY(Cwid)
+					 REFERENCES STUDENTS(Cwid),
+	CONSTRAINT	TEAMS_FK	 FOREIGN KEY(TeamsId)
+					 REFERENCES TEAMS(TeamId)
 );
 
 CREATE TABLE GAMES (
@@ -96,25 +96,25 @@ CREATE TABLE GAMES_ASSOC (
 );
 
 CREATE TABLE EQUIPMENT_INVENTORY(
-  EquipmentId Int NOT NULL UNIQUE, 
-  EquipmentName VarChar(75) NOT NULL,
-  SportId   Int   NOT NULL UNIQUE,
-  NoOfItems Int NOT NULL,
-  CONSTRAINT EQUIPMENT_PK PRIMARY KEY(EquipmentId),
-  CONSTRAINT EQUIPMENT_SPORT_FK FOREIGN KEY(SportId)
-                                 REFERENCES SPORT(SportId)
+  	EquipmentId 	Int 		   NOT NULL UNIQUE, 
+  	EquipmentName 	VarChar(75) 	   NOT NULL,
+  	SportId   	Int   		   NOT NULL UNIQUE,
+  	NoOfItems 	Int 		   NOT NULL,
+  	CONSTRAINT 	EQUIPMENT_PK 	   PRIMARY KEY(EquipmentId),
+  	CONSTRAINT 	EQUIPMENT_SPORT_FK FOREIGN KEY(SportId)
+                                 	   REFERENCES SPORT(SportId)
 );
 
 CREATE TABLE EQUIPMENT_LOG(
-  EquipmentId Int NOT NULL UNIQUE, 
-  Cwid		Int		NOT NULL UNIQUE,
-  DateBorrowed Date NOT NULL,
-  DateReturned Date NOT NULL, 
-  Purpose Char(5) NOT NULL,
-  NoOfItemsBorrowed Int NOT NULL, 
-  CONSTRAINT EQUIPMENT_LOG_PF PRIMARY KEY(EquipmentId, Cwid, DateBorrowed, Purpose),
-  CONSTRAINT EQUIPMENT_LOG_STUDENTS_FK FOREIGN KEY(Cwid)
-                                       REFERENCES STUDENTS(Cwid),
-  CONSTRAINT EQUIPMENT_LOG_EQUIPMENT_INV_FK FOREIGN KEY(EquipmentId)
-                                            REFERENCES EQUIPMENT_INVENTORY(EquipmentId)                               
+	EquipmentId 	Int 		NOT NULL UNIQUE, 
+	Cwid		Int		NOT NULL UNIQUE,
+	DateBorrowed 	Date 		NOT NULL,
+	DateReturned 	Date 		NOT NULL, 
+	Purpose 	Char(5) 	NOT NULL,
+	NoOfItemsBorrowed Int 		NOT NULL, 
+	CONSTRAINT EQUIPMENT_LOG_PF 	PRIMARY KEY(EquipmentId, Cwid, DateBorrowed, Purpose),
+	CONSTRAINT EQUIPMENT_LOG_STUDENTS_FK FOREIGN KEY(Cwid)
+					     REFERENCES STUDENTS(Cwid),
+	CONSTRAINT EQUIPMENT_LOG_EQUIPMENT_INV_FK FOREIGN KEY(EquipmentId)
+						    REFERENCES EQUIPMENT_INVENTORY(EquipmentId)                               
 );
