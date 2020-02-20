@@ -1,6 +1,7 @@
 USE INTRAMURAL
 GO
 
+/***************************************** Creating Tables *********************************/
 CREATE TABLE STUDENTS (
 	Cwid		Int		NOT NULL UNIQUE,
 	FName		Char(25)	NOT NULL,
@@ -97,17 +98,18 @@ CREATE TABLE GAMES_ASSOC (
 
 CREATE TABLE EQUIPMENT_INVENTORY(
   	EquipmentId 	Int 		   NOT NULL UNIQUE, 
-  	EquipmentName 	VarChar(75) 	   NOT NULL,
-  	SportId   	Int   		   NOT NULL UNIQUE,
+  	EquipmentName 	VarChar(75) NOT NULL,
+  	SportId   	Int   		   NOT NULL,
   	NoOfItems 	Int 		   NOT NULL,
   	CONSTRAINT 	EQUIPMENT_PK 	   PRIMARY KEY(EquipmentId),
   	CONSTRAINT 	EQUIPMENT_SPORT_FK FOREIGN KEY(SportId)
                                  	   REFERENCES SPORT(SportId)
 );
 
+
 CREATE TABLE EQUIPMENT_LOG(
-	EquipmentId 	Int 		NOT NULL UNIQUE, 
-	Cwid		Int		NOT NULL UNIQUE,
+	EquipmentId 	Int 		NOT NULL, 
+	Cwid		Int		NOT NULL,
 	DateBorrowed 	Date 		NOT NULL,
 	DateReturned 	Date 		NOT NULL, 
 	Purpose 	Char(5) 	NOT NULL,
