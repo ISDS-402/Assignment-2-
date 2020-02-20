@@ -248,12 +248,7 @@ INSERT INTO GAMES_ASSOC VALUES(08, 08);
 INSERT INTO GAMES_ASSOC VALUES(09, 09);
 INSERT INTO GAMES_ASSOC VALUES(10, 10);
 
-/* Everything upto GAMES_ASSOC table works. Had to remove the constraint that RefId and LocationId must be unique. 
-Changed the primary key in GAMES to a composite key; (GamesId, LocationId, GameDate, GameTime).
-Having this composite key, and removing the constraint allows us to assign a location or a ref
-on different times and dates. */
-
-/* EQUIPMENT_INVENTORY */
+	/* EQUIPMENT_INVENTORY */
 INSERT INTO EQUIPMENT_INVENTORY VALUES(01, 'Basketball', 458, 15);
 INSERT INTO EQUIPMENT_INVENTORY VALUES(02, 'Tennis Ball', 373, 100);
 INSERT INTO EQUIPMENT_INVENTORY VALUES(03, 'Football', 123, 15);
