@@ -1,5 +1,5 @@
 # Assignment-2- Due Sunday - 2/23
-## Update on 2/20, 6:46 p.m. - Assignment 2 report is almost finished. All we need is the screenshots of the dummy data of all the tables. 
+## Update on 2/23 8:47 pm. - Assignment 2 report is finished. Both the report's pdf and .docx were committed to github.  
 
 Here is where you'll find the SQL text files for creating tables, Inserting dummy data, and assignment instructions, and the almost finished report.
 I've also attached the SQL code examples that Dr. Gonzalez provided us. 
